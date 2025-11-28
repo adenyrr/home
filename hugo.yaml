@@ -114,7 +114,7 @@ params:
     title: "adenyrr."
     subtitle: "adminsys cloud"
     content: "administrateur système passionné par l'infrastructure, du hardware au déploiement de services finaux. j'ai un kink pour la protection des données et l'opensource."
-    image: /images/hero.svg
+    # image: /images/hero.svg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -139,16 +139,19 @@ params:
     title: "/whoami"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+      Je suis un adminsys orienté cloud, virtualisation et conteneurisation. Fasciné par l'open-source depuis très jeune, j'utilise GNU/Linux au quotidien. Sensibilisé aux questions du respect des données, j'héberge quasiment l'intégralité de mes services à domicile.
 
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      Je suis pour le chiffrement des communications, et milite pour l'utilisation massive et la préservation des logiciels opensource audités.
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "Quelques technos que j'utilise au quotidien, notamment en homelab:"
       items:
-        - Proxmox - OPNSense
-        - CEPH
-        - Docker
+        - Proxmox - CEPH
+        - OPNSense - nginx
+        - Docker - Podman - LXC
+        - K3S - MetalLB
+        - debian - cachyos - talos
+        - komo.do - gitlab
 
   # Experience
   experience:

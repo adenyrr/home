@@ -1,6 +1,6 @@
 baseURL: "https://adenyrr.me"
 languageCode: "fr-fr"
-title: "Hugo Profile"
+title: "/home/adenyrr"
 theme: hugo-profile
 
 outputs:
@@ -239,41 +239,39 @@ params:
     title: "/certs"
     index: false
     items:
+      - title: "adminsys - coordination équipe & infra IT"
+        school:
+          name: "A6k - E6k @ Charleroi"
+          url: "https://www.e6k.be/"
+        date: "2023 - 2026"
+        # GPA: "3.9 out of 5.0"
+        content: |-
+          
+          Infrastructure :
+            - Hardware, Troubleshooting, Customer Care
+            - Réseau Cisco : routage, switch, vlans, ...
+
+          Serveurs et virtualisation :
+            - Création et administration d'un Active Directory, gestion de projets
+            - Introduction à AWS, Linux et VMWare
+          
+          Stages en entreprise
+        # featuredLink:
+          # enable: true
+          # name: "My academic record"
+          # url: "https://example.com"
       - title: "CQ6 - Technicien Chimiste QC"
         school:
           name: "IPES - Ath"
         date: "2011 - 2013"
-        GPA: "3.8 out of 5.0"
+        # GPA: "3.8 out of 5.0"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          Chimie analytique, instrumentale, organique et mise en production
+            - Analyse du suivi de la production, mise en conformité, respect des normes.
+            - Formulation sur base d'un cahier des charges, documentation de la production.
+          
+          Stages en entreprise
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
 
   # Achievements
   achievements:
@@ -302,50 +300,37 @@ params:
     enable: true
     title: "/prod"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+      - title: Documentation
+        content: Documentation de toute mon infra, tutoriels sur des services && partage de connaissances et de bonnes pratiques
         image: /images/projects/profile.png
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          name: .docu
+          link: https://docu.adenyrr.me
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Self-hosting"
+          - "Services"
+          - "OPNSense"
         links:
           - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+            url: mailto:adenyrr@proton.me
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://github.com/adenyrr/docu
+          - icon: fab fa-gitlab
+            url: https://gitlab.com/adenyrr/docu
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+      - title: Infra opensource
+        content: Réalisation d'une infrastructure entièrement basée sur des logiciels opensource
+        image: /images/projects/converter.png
+        # featured:
+          # name: Demo
+          # link: https://django-converter.herokuapp.com
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Proxmox"
+          - "OPNSense"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/adenyrr/infra
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:

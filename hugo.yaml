@@ -130,7 +130,7 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-linkedin
           url: https://be.linkedin.com/in/mvanhede
-        - icon: fab fa-credly
+        - icon: fas fa-certificate
           url: https://www.credly.com/users/adenyrr
         - icon: fab fa-github
           url: https://github.com/adenyrr

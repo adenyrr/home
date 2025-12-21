@@ -29,10 +29,10 @@ Menus:
       title: Blog posts
       url: https://blog.adenyrr.me
       weight: 1
-    - identifier: infra
-      name: /infra
-      title: Infra homelab
-      url: https://infra.adenyrr.me
+    - identifier: docu
+      name: /docu
+      title: Ma documentation
+      url: https://docu.adenyrr.me
       weight: 2
 
 params:
@@ -122,14 +122,16 @@ params:
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Credly"
-      url: "https://www.credly.com/users/adenyrr"
+      name: "Ma documentation"
+      url: "https://docu.adenyrr.me"
       download: false
       newPage: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-linkedin
           url: https://be.linkedin.com/in/mvanhede
+        - icon: fab fa-credly
+          url: https://www.credly.com/users/adenyrr
         - icon: fab fa-github
           url: https://github.com/adenyrr
         - icon: fab fa-gitlab

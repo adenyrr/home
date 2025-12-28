@@ -326,7 +326,7 @@ params:
 
       - title: Infra opensource
         content: Réalisation d'une infrastructure entièrement basée sur des logiciels opensource
-        image: /images/projects/infra.png
+        image: /images/projects/infra.webp
         featured:
           name: .infra
           link: https://infra.adenyrr.me

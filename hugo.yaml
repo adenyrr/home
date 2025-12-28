@@ -308,7 +308,7 @@ params:
     items:
       - title: Documentation
         content: Documentation de toute mon infra, tutoriels sur des services && partage de connaissances et de bonnes pratiques
-        image: /images/projects/docu.png
+        image: /images/projects/docu.webp
         featured:
           name: .docu
           link: https://docu.adenyrr.me
@@ -327,15 +327,19 @@ params:
       - title: Infra opensource
         content: Réalisation d'une infrastructure entièrement basée sur des logiciels opensource
         image: /images/projects/infra.png
-        # featured:
-          # name: Demo
-          # link: https://django-converter.herokuapp.com
+        featured:
+          name: .infra
+          link: https://infra.adenyrr.me
         badges:
           - "Proxmox"
           - "OPNSense"
         links:
+          - icon: fa fa-envelope
+            url: mailto:adenyrr@proton.me
           - icon: fab fa-github
             url: https://github.com/adenyrr/infra
+          - icon: fab fa-gitlab
+            url: https://gitlab.com/adenyrr/infra
 
 
   #Contact

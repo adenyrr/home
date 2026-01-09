@@ -1,0 +1,56 @@
+image: node:18-alpine
+
+stages:
+  - install
+  - build
+  - deploy
+
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - .npm/
+    - .cache/
+    - public/
+
+# Install dependencies
+install:
+  stage: install
+  script:
+    - npm ci --prefer-offline
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 hour
+
+# Build Gatsby site
+build:
+  stage: build
+  dependencies:
+    - install
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - public/
+    expire_in: 1 week
+
+# Deploy to GitLab Pages
+pages:
+  stage: deploy
+  dependencies:
+    - build
+  script:
+    - echo "Deploying to GitLab Pages..."
+  artifacts:
+    paths:
+      - public/
+  only:
+    - main
+    - master
+  environment:
+    name: production
+    url: https://$CI_PROJECT_NAMESPACE.gitlab.io/$CI_PROJECT_NAME

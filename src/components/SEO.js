@@ -25,6 +25,7 @@ export default function SEO({ title, description, pathname }) {
     <Helmet>
       <html lang="fr" />
       <title>{metaTitle}</title>
+      <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />

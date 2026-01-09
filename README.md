@@ -101,6 +101,17 @@ Toute la configuration du portfolio se fait dans `src/config/portfolio.js` :
 - Certifications (badges)
 - Expériences professionnelles
 
+Pour supprimer ou adapter le script analytics, modifier le fichier gatsby-ssr.js et modifier ou enlever ces lignes :
+
+```typescript
+    }),
+    React.createElement('script', {
+      key: 'umami-analytics',
+      defer: true,
+      src: 'https://analytics.adenyrr.me/script.js',
+      'data-website-id': '0a492b95-7e72-4c6c-bfe0-bcfe2cbb625f'
+```
+
 ## 🎨 Thèmes
 
 - **Dark mode** : Fond sombre (#0a0e14) avec gradients violet/rose

@@ -26,6 +26,12 @@ exports.onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
       key: 'apple-touch-icon',
       rel: 'apple-touch-icon',
       href: '/favicon.png'
+    }),
+    React.createElement('script', {
+      key: 'umami-analytics',
+      defer: true,
+      src: 'https://analytics.adenyrr.me/script.js',
+      'data-website-id': '1e9c9bef-767a-4136-a3df-6f0c6d309ade'
     })
   ]);
 

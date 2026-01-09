@@ -10,6 +10,18 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `adenyrr - Portfolio`,
+        short_name: `adenyrr`,
+        start_url: `/`,
+        background_color: `#0d1117`,
+        theme_color: `#3b82f6`,
+        display: `standalone`,
+        icon: `static/favicon.jpg`,
+      },
+    },
   ]
 };

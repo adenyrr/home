@@ -72,7 +72,7 @@ module.exports = {
       link: "https://infra.adenyrr.me/",
       repo: "https://github.com/adenyrr/infra",
       year: 2023,
-      image: "https://adenyrr.me/images/projects/infra.webp"
+      image: "/infra.jpg"
     }
   ],
 

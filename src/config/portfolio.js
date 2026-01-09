@@ -61,7 +61,7 @@ module.exports = {
       link: "https://docu.adenyrr.me/",
       repo: "https://github.com/adenyrr/docu",
       year: 2024,
-      image: "https://adenyrr.me/images/projects/docu.webp"
+      image: "/docu.jpg"
     },
     {
       id: "infra",

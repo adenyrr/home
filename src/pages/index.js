@@ -6,13 +6,15 @@ import ProjectsGrid from '../components/ProjectsGrid';
 import DiplomaCard from '../components/DiplomaCard';
 import CertificationCard from '../components/CertificationCard';
 import JobCard from '../components/JobCard';
+import ParticleBackground from '../components/ParticleBackground';
 import config from '../config/portfolio';
 
 export default function Index() {
   const { sections, projects, diplomas, certifications, jobs } = config;
 
   return (
-    <main id="main" className="min-h-screen flex flex-col">
+    <main id="main" className="min-h-screen flex flex-col relative">
+      <ParticleBackground />
       <Header />
       <Hero />
 

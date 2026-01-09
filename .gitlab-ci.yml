@@ -7,6 +7,8 @@ stages:
 
 variables:
   npm_config_cache: "$CI_PROJECT_DIR/.npm"
+  # Évite les erreurs avec les peer dependencies de Gatsby
+  npm_config_legacy_peer_deps: "true"
 
 cache:
   key: ${CI_COMMIT_REF_SLUG}
@@ -20,7 +22,7 @@ cache:
 install:
   stage: install
   script:
-    - npm ci --prefer-offline
+    - npm ci --legacy-peer-deps
   artifacts:
     paths:
       - node_modules/

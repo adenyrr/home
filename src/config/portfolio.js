@@ -5,9 +5,7 @@ module.exports = {
   title: "adminsys cloud",
   tagline: "Administrateur système, cloud et self-hosting",
   short_bio: "Administrateur système passionné par l'infrastructure, chiffrement et open-source.",
-  bio: `Je suis un adminsys orienté cloud, virtualisation et conteneurisation. Fasciné
-  par l'open-source depuis très jeune, j'utilise GNU/Linux au quotidien et j'héberge
-  l'intégralité de mes services à domicile.`,
+  bio: `administrateur système passionné par l’infrastructure, du hardware au déploiement de services finaux. j’ai un kink pour la protection des données et l’opensource.`,
   email: "adenyrr@proton.me",
   site_url: "https://adenyrr.me",
 

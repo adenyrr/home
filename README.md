@@ -25,6 +25,7 @@ Design inspiré d'un style futuriste avec effets glassmorphism et gradients viol
 | Technologie | Version | Description | Lien |
 |-------------|---------|-------------|------|
 | [Tailwind CSS](https://tailwindcss.com/) | ^3.4.0 | Framework CSS utility-first | https://tailwindcss.com/ |
+| [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) | ^0.5.10 | Plugin typographie pour Tailwind | https://tailwindcss.com/docs/typography-plugin |
 | [PostCSS](https://postcss.org/) | ^8.4.0 | Transformateur CSS | https://postcss.org/ |
 | [Autoprefixer](https://autoprefixer.github.io/) | ^10.4.0 | Ajout automatique des préfixes CSS | https://autoprefixer.github.io/ |
 
@@ -41,6 +42,7 @@ Design inspiré d'un style futuriste avec effets glassmorphism et gradients viol
 | gatsby-plugin-react-helmet | Gestion des meta tags SEO |
 | gatsby-plugin-image | Optimisation des images |
 | gatsby-plugin-sharp | Traitement des images |
+| gatsby-transformer-sharp | Transformation des images |
 | gatsby-plugin-sitemap | Génération du sitemap XML |
 
 ### Déploiement

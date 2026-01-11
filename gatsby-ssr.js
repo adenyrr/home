@@ -19,13 +19,13 @@ exports.onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
     React.createElement('link', {
       key: 'favicon',
       rel: 'icon',
-      type: 'image/png',
-      href: '/favicon.png'
+      type: 'image/jpeg',
+      href: '/favicon.jpg'
     }),
     React.createElement('link', {
       key: 'apple-touch-icon',
       rel: 'apple-touch-icon',
-      href: '/favicon.png'
+      href: '/favicon.jpg'
     }),
     React.createElement('script', {
       key: 'umami-analytics',

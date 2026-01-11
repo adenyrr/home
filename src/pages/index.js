@@ -1,13 +1,15 @@
-import React from 'react';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
-import ProjectsGrid from '../components/ProjectsGrid';
-import DiplomaCard from '../components/DiplomaCard';
-import CertificationCard from '../components/CertificationCard';
-import JobCard from '../components/JobCard';
-import ParticleBackground from '../components/ParticleBackground';
-import config from '../config/portfolio';
+import React from "react";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Footer from "../components/Footer";
+import ProjectsGrid from "../components/ProjectsGrid";
+import DiplomaCard from "../components/DiplomaCard";
+import CertificationCard from "../components/CertificationCard";
+import JobCard from "../components/JobCard";
+import ParticleBackground from "../components/ParticleBackground";
+import ScrollToTop from "../components/ScrollToTop";
+import SectionTitle from "../components/SectionTitle";
+import config from "../config/portfolio";
 
 export default function Index() {
   const { sections, projects, diplomas, certifications, jobs } = config;
@@ -20,9 +22,9 @@ export default function Index() {
 
       {/* Projects Section */}
       {sections.projects && projects.length > 0 && (
-        <section className="w-full py-16">
+        <section className="w-full py-8">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="section-title">Projets récents</h2>
+            <SectionTitle>Projets récents</SectionTitle>
             <ProjectsGrid projects={projects} />
           </div>
         </section>
@@ -30,9 +32,9 @@ export default function Index() {
 
       {/* Certifications Section */}
       {sections.certifications && certifications.length > 0 && (
-        <section className="w-full py-16">
+        <section className="w-full py-8">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="section-title">Certifications</h2>
+            <SectionTitle>Certifications</SectionTitle>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {certifications.map((cert) => (
                 <CertificationCard key={cert.id} cert={cert} />
@@ -44,9 +46,9 @@ export default function Index() {
 
       {/* Diplomas Section */}
       {sections.diplomas && diplomas.length > 0 && (
-        <section className="w-full py-16">
+        <section className="w-full py-8">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="section-title">Diplômes</h2>
+            <SectionTitle>Diplômes</SectionTitle>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {diplomas.map((diploma) => (
                 <DiplomaCard key={diploma.id} diploma={diploma} />
@@ -58,9 +60,9 @@ export default function Index() {
 
       {/* Jobs Section */}
       {sections.jobs && jobs.length > 0 && (
-        <section className="w-full py-16">
+        <section className="w-full py-8">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="section-title">Expériences professionnelles</h2>
+            <SectionTitle>Expériences professionnelles</SectionTitle>
             <div className="space-y-6 max-w-4xl mx-auto">
               {jobs.map((job) => (
                 <JobCard key={job.id} job={job} />
@@ -70,6 +72,7 @@ export default function Index() {
         </section>
       )}
 
+      <ScrollToTop />
       <Footer />
     </main>
   );

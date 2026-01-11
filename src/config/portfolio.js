@@ -2,10 +2,11 @@ module.exports = {
   // === Informations personnelles ===
   name: "adenyrr",
   handle: "adenyrr",
+  header_name: "adenyrr.home",
   title: "adminsys cloud",
   tagline: "Administrateur système, cloud et self-hosting",
-  short_bio: "Administrateur système passionné par l'infrastructure, chiffrement et open-source.",
   bio: `administrateur système passionné par l’infrastructure, du hardware au déploiement de services finaux. j’ai un kink pour la protection des données et l’opensource.`,
+
   email: "adenyrr@proton.me",
   site_url: "https://adenyrr.me",
 
@@ -17,8 +18,21 @@ module.exports = {
   header_links: [
     { label: "GitHub", icon: "Github", url: "https://github.com/adenyrr" },
     { label: "GitLab", icon: "Gitlab", url: "https://gitlab.com/adenyrr" },
-    { label: "LinkedIn", icon: "Linkedin", url: "https://be.linkedin.com/in/mvanhede" },
-    { label: "Discord", icon: "MessageCircle", url: "https://discord.gg/NWVukm7zE2" },
+    {
+      label: "LinkedIn",
+      icon: "Linkedin",
+      url: "https://be.linkedin.com/in/mvanhede",
+    },
+    {
+      label: "Discord",
+      icon: "MessageCircle",
+      url: "https://discord.gg/NWVukm7zE2",
+    },
+    {
+      label: "Email",
+      icon: "Mail",
+      url: "mailto:adenyrr@proton.me",
+    },
   ],
 
   // === Liens affichés dans le Hero ===
@@ -28,8 +42,9 @@ module.exports = {
   // - icon: nom de l'icône Lucide (ex: "Library", "Server", "FileText", "Globe")
   // Le premier lien aura le style "gradient", les autres auront un style "outline"
   hero_links: [
-    { label: "Documentation", url: "https://docu.adenyrr.me/", icon: "Library" },
-    { label: "Infra", url: "https://infra.adenyrr.me/", icon: "Server" }
+    { label: "Documentation", url: "https://docu.adenyrr.me/", icon: "Library",},
+    { label: "Infra", url: "https://infra.adenyrr.me/", icon: "Server" },
+    { label: "Blog", url: "https://blog.adenyrr.me", icon: "FileText" },
   ],
 
   // === Visibilité des sections ===
@@ -37,7 +52,7 @@ module.exports = {
     projects: true,
     diplomas: true,
     certifications: true,
-    jobs: true
+    jobs: true,
   },
 
   // === Projets ===
@@ -55,25 +70,27 @@ module.exports = {
     {
       id: "docu",
       title: "Documentation",
-      description: "Documentation de l'infrastructure, tutoriels et bonnes pratiques (self-hosted).",
+      description:
+        "Documentation de l'infrastructure, tutoriels et bonnes pratiques (self-hosted).",
       tech: ["Zensical", "Services", "Réseau", "Documentation"],
       icon: "Library",
       link: "https://docu.adenyrr.me/",
       repo: "https://github.com/adenyrr/docu",
       year: 2024,
-      image: "/docu.jpg"
+      image: "/docu.jpg",
     },
     {
       id: "infra",
       title: "Infra opensource",
-      description: "Réalisation d'une infrastructure entièrement basée sur des logiciels opensource.",
+      description:
+        "Réalisation d'une infrastructure entièrement basée sur des logiciels opensource.",
       tech: ["Proxmox", "CEPH", "K3s"],
       icon: "Server",
       link: "https://infra.adenyrr.me/",
       repo: "https://github.com/adenyrr/infra",
       year: 2023,
-      image: "/infra.jpg"
-    }
+      image: "/infra.jpg",
+    },
   ],
 
   // === Diplômes ===
@@ -90,17 +107,19 @@ module.exports = {
       title: "CQ6 - Technicien Chimiste QC",
       institution: "IPES @ Ath",
       period: "2011 - 2013",
-      description: "Chimie analytique, instrumentale, organique et mise en production. Analyse du suivi de la production, mise en conformité, respect des normes.",
-      tags: ["Chimie", "QC", "Production"]
+      description:
+        "Chimie analytique, instrumentale, organique et mise en production. Analyse du suivi de la production, mise en conformité, respect des normes.",
+      tags: ["Chimie", "QC", "Production"],
     },
     {
       id: "adminsys",
       title: "Adminsys - Coordination équipe & infra IT",
       institution: "A6k - E6k @ Charleroi",
       period: "2023 - 2026",
-      description: "Infrastructure, Hardware, Troubleshooting, Customer Care. Réseau Cisco, Active Directory, gestion de projets. Introduction à AWS, Linux et VMWare.",
-      tags: ["Infrastructure", "Cisco", "AWS", "Linux", "VMWare"]
-    }
+      description:
+        "Infrastructure, Hardware, Troubleshooting, Customer Care. Réseau Cisco, Active Directory, gestion de projets. Introduction à AWS, Linux et VMWare.",
+      tags: ["Infrastructure", "Cisco", "AWS", "Linux", "VMWare"],
+    },
   ],
 
   // === Certifications (Credly) ===
@@ -118,7 +137,8 @@ module.exports = {
       issuer: "Cisco",
       date: "2024",
       credly_url: "https://www.credly.com/users/adenyrr",
-      badge_image: "https://images.credly.com/size/340x340/images/04e8034c-81f5-4f7f-ab23-e8b428c31ce9/ITE.png"
+      badge_image:
+        "https://images.credly.com/size/340x340/images/04e8034c-81f5-4f7f-ab23-e8b428c31ce9/ITE.png",
     },
     {
       id: "linux-essentials",
@@ -126,8 +146,9 @@ module.exports = {
       issuer: "Cisco",
       date: "2024",
       credly_url: "https://www.credly.com/users/adenyrr",
-      badge_image: "https://images.credly.com/size/340x340/images/e8fe3d67-2967-43d0-bc4a-7a268a37f47b/image.png"
-    }
+      badge_image:
+        "https://images.credly.com/size/340x340/images/e8fe3d67-2967-43d0-bc4a-7a268a37f47b/image.png",
+    },
   ],
 
   // === Expériences professionnelles ===
@@ -140,12 +161,13 @@ module.exports = {
   // - description: description du poste
   jobs: [
     {
-      id: "e6k",
-      title: "Adminsys",
-      company: "A6k - E6k",
-      location: "Charleroi",
-      period: "2023 - Présent",
-      description: "Administration système, gestion d'infrastructure, support IT."
-    }
-  ]
+      id: "ferme",
+      title: "Maraichage",
+      company: "Thym & Romarin",
+      location: "Rocroi",
+      period: "2018 - 2021",
+      description:
+        "Maraichage, culture de légumes et herbes aromatiques, gestion de la ferme.",
+    },
+  ],
 };

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 export default function Badge({ children }) {
   return (
-    <span className="inline-block px-3 py-1 text-xs font-semibold rounded-lg bg-indigo-100 text-indigo-700 border border-indigo-300/60 dark:bg-purple-500/15 dark:text-purple-300 dark:border-purple-400/40">
+    <span className="inline-block px-3 py-1 text-xs font-semibold rounded-lg bg-blue-500/10 text-blue-500 border border-blue-500/20 dark:bg-blue-500/15 dark:text-blue-400 dark:border-blue-400/30">
       {children}
     </span>
   );

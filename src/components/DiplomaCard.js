@@ -1,6 +1,6 @@
-import React from 'react';
-import Badge from './Badge';
-import { GraduationCap } from 'lucide-react';
+import React from "react";
+import Badge from "./Badge";
+import { GraduationCap } from "lucide-react";
 
 export default function DiplomaCard({ diploma }) {
   return (
@@ -10,12 +10,16 @@ export default function DiplomaCard({ diploma }) {
           <GraduationCap size={20} />
         </div>
         <div>
-          <h3 className="text-lg font-semibold leading-tight">{diploma.title}</h3>
+          <h3 className="text-lg font-semibold leading-tight">
+            {diploma.title}
+          </h3>
           <span className="text-xs text-muted">{diploma.period}</span>
         </div>
       </div>
 
-      <p className="text-sm font-medium text-violet-400 dark:text-purple-400 mb-2">{diploma.institution}</p>
+      <p className="text-sm font-medium text-violet-400 dark:text-purple-400 mb-2">
+        {diploma.institution}
+      </p>
       <p className="text-sm text-muted flex-1">{diploma.description}</p>
 
       {diploma.tags && diploma.tags.length > 0 && (

@@ -1,5 +1,5 @@
-import React from 'react';
-import { ExternalLink, ShieldCheck } from 'lucide-react';
+import React from "react";
+import { ExternalLink, ShieldCheck } from "lucide-react";
 
 export default function CertificationCard({ cert }) {
   return (
@@ -7,9 +7,9 @@ export default function CertificationCard({ cert }) {
       {/* Badge image */}
       {cert.badge_image && (
         <div className="mb-4 w-28 h-28 rounded-xl overflow-hidden bg-gray-800/50 dark:bg-gray-800 p-2">
-          <img 
-            src={cert.badge_image} 
-            alt={cert.title} 
+          <img
+            src={cert.badge_image}
+            alt={cert.title}
             className="w-full h-full object-contain"
             loading="lazy"
           />
@@ -24,9 +24,9 @@ export default function CertificationCard({ cert }) {
       <span className="text-xs text-muted mt-1">{cert.date}</span>
 
       {cert.credly_url && (
-        <a 
-          href={cert.credly_url} 
-          target="_blank" 
+        <a
+          href={cert.credly_url}
+          target="_blank"
           rel="noopener noreferrer"
           className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-violet-600/90 to-indigo-600/90 text-white text-sm font-medium hover:opacity-80 transition-opacity"
         >

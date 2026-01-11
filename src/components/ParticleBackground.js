@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 const ParticleBackground = () => {
   const canvasRef = useRef(null);
@@ -8,10 +8,11 @@ const ParticleBackground = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     const particleCount = 50;
 
-    const isDarkMode = () => document.documentElement.classList.contains('dark');
+    const isDarkMode = () =>
+      document.documentElement.classList.contains("dark");
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -28,17 +29,17 @@ const ParticleBackground = () => {
           speedX: (Math.random() - 0.5) * 0.5,
           speedY: (Math.random() - 0.5) * 0.5,
           opacity: Math.random() * 0.5 + 0.2,
-          hue: Math.random() * 60 + 240 // Purple to pink range
+          hue: Math.random() * 60 + 240, // Purple to pink range
         });
       }
     };
 
     const drawParticle = (p) => {
       const dark = isDarkMode();
-      const color = dark 
+      const color = dark
         ? `hsla(${p.hue}, 70%, 60%, ${p.opacity * 0.6})`
         : `hsla(${p.hue}, 60%, 50%, ${p.opacity * 0.4})`;
-      
+
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
       ctx.fillStyle = color;
@@ -52,7 +53,7 @@ const ParticleBackground = () => {
     const connectParticles = () => {
       const maxDistance = 120;
       const dark = isDarkMode();
-      
+
       for (let i = 0; i < particlesRef.current.length; i++) {
         for (let j = i + 1; j < particlesRef.current.length; j++) {
           const dx = particlesRef.current[i].x - particlesRef.current[j].x;
@@ -61,10 +62,10 @@ const ParticleBackground = () => {
 
           if (distance < maxDistance) {
             const opacity = (1 - distance / maxDistance) * 0.15;
-            const color = dark 
+            const color = dark
               ? `rgba(139, 92, 246, ${opacity})`
               : `rgba(99, 102, 241, ${opacity * 0.6})`;
-            
+
             ctx.beginPath();
             ctx.strokeStyle = color;
             ctx.lineWidth = 1;
@@ -89,7 +90,8 @@ const ParticleBackground = () => {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < mouseRef.current.radius) {
-            const force = (mouseRef.current.radius - distance) / mouseRef.current.radius;
+            const force =
+              (mouseRef.current.radius - distance) / mouseRef.current.radius;
             p.x += dx * force * 0.02;
             p.y += dy * force * 0.02;
           }
@@ -105,10 +107,10 @@ const ParticleBackground = () => {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       updateParticles();
       connectParticles();
-      
+
       for (let p of particlesRef.current) {
         drawParticle(p);
       }
@@ -132,15 +134,15 @@ const ParticleBackground = () => {
     animate();
 
     // Event listeners
-    window.addEventListener('resize', resize);
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseleave', handleMouseLeave);
+    window.addEventListener("resize", resize);
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseleave", handleMouseLeave);
 
     // Cleanup
     return () => {
-      window.removeEventListener('resize', resize);
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener("resize", resize);
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseleave", handleMouseLeave);
       if (animationIdRef.current) {
         cancelAnimationFrame(animationIdRef.current);
       }
@@ -152,12 +154,12 @@ const ParticleBackground = () => {
       ref={canvasRef}
       id="particles-canvas"
       style={{
-        position: 'fixed',
+        position: "fixed",
         top: 0,
         left: 0,
-        width: '100%',
-        height: '100%',
-        pointerEvents: 'none',
+        width: "100%",
+        height: "100%",
+        pointerEvents: "none",
         zIndex: 0,
       }}
     />

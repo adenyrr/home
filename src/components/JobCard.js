@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function JobCard({ job }) {
   return (
@@ -10,15 +10,11 @@ export default function JobCard({ job }) {
         </div>
         <div className="text-right md:text-left">
           <span className="text-sm text-muted">{job.period}</span>
-          {job.location && (
-            <p className="text-xs text-muted">{job.location}</p>
-          )}
+          {job.location && <p className="text-xs text-muted">{job.location}</p>}
         </div>
       </div>
 
-      {job.description && (
-        <p className="text-muted">{job.description}</p>
-      )}
+      {job.description && <p className="text-muted">{job.description}</p>}
     </article>
   );
 }
